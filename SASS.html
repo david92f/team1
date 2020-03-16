@@ -7,25 +7,56 @@
     </head>
     <body>
         <header>
-            <h1 class="h1">Equipo 1</h1>
+            <h1>Equipo 1</h1>
         </header>
         
-        <h2 class="h2">¿Qué es SCSS?</2>
+        <h3>¿Qué es SCSS?</h3><br>
+        <ul>
+            <li>SCSS hereda directamente de CSS, por loq ue cualquier elemento que podamos utilizar en CSS, también puede ser utilizado en SCSS, y tiene una </li>
+            <br>
+            <li>SCSS utiliza la extensión '.scss'.</li>
+            <br>
+            <li>Es la más usada ya que posee una sintaxis fácil, y al ser tan parecida a CSS, lo hace un preprocesador bastante familiar.</li>
+            <br>
+            <li>Cuando utilizamos SCSS, podemos utilizar anidamientos, funciones, herencia y variables, entre otras múltiples opciones.</li>
+            <br>
+            <li>La sintaxis la expondremos a continuacion:</li>
+            <br>
+        </ul>
 
-        <h2 class="h2">¿Qué es SASS?</h2><br>
+        <code>
+            <div class="codigo"><span class="variables">$font-stack</span><span>:</span> <span class="variables">Helvetica, sans seriff;</span><br>
+            <span class="variables">$primary-color</span><span>:</span> <span class="variables">#333;</span><br>
+            <span class="clase">body</span><span>{</span><br>
+            <span class="atributos">&nbsp;&nbsp;&nbsp;font: 100% font-stack;</span><br>
+            <span class="atributos">&nbsp;&nbsp;&nbsp;color: $primary-color;</span><br>
+            <span>}</span>
+            </div>
+        </code><br><br>
+        <p>Que a la hora de convertirlo en CSS nos dejará algo así:</p><br>
+        <code>
+            <div class="codigo">
+            <span class="clase">body</span><span>{</span><br>
+            <span class="atributos">&nbsp;&nbsp;&nbsp;font: 100% Helvetica, sans-serif;</span><br>
+            <span class="atributos">&nbsp;&nbsp;&nbsp;color: #333;</span><br>
+            <span>}</span>
+            </div>
+        </code>
+        <br><br><br>
+        <h3>¿Qué es SASS?</h3><br>
         <p>Siglas de Syntactically Awesome Style Sheets</p><br>
-        <ol><li>SASS se trata de un preprocesador de CSS, ¿qué quiere decir esto? Pues bien, los preprocesadores 
+        <ul><li>SASS se trata de un preprocesador de CSS, ¿qué quiere decir esto? Pues bien, los preprocesadores 
             son herramientas para el desarrollador que nos permiten no sólo quedarnos en el límite impuesto de CSS. 
             Como por ejemplo pueden ser el añadir variables, anidación, funciones, etcétera.</li>
-            <br><br>
+            <br>
             <li>No hay que pensar que SASS es muy diferente de CSS de todas formas, puesto que 
             al utilizar el mismo, puedes compilar tu archivo SASS a CSS para poder utilizarla 
             en tu página web.</li>
-            <br><br>
+            <br>
             <li>La sintaxis de SASS es muy sencilla. Es muy parecida a la de CSS, pero omitiendo por ejemplo el uso del punto y coma ';', 
             además del uso de '$' para establecer las variables, aquí abajo tenemos un ejemplo:</li>
-            <br><br>
-        </ol>
+            <br>
+        </ul>
         <code>
             <div class="codigo"><span class="variables">$font-stack</span><span>:</span> <span class="variables">Helvetica, sans seriff</span><br>
             <span class="variables">$primary-color</span><span>:</span> <span class="variables">#333</span><br>
@@ -46,15 +77,12 @@
             </div>
         </code>
 
-        <br/>
-        <br/>
-        <ul style="background-color: white;">
+        <ul>
             <li>¿De qué nos sirve todo esto? Pues bien, gracias a poder utilizar variables podemos hacer el código más 
-            entendible, y lo que es más, reutilización de código, implementación de funciones... que al final de todo nos ahorrará bastante trabajo.</li>
+                entendible, y lo que es más, reutilización de código, implementación de funciones... que al final de todo nos ahorrará bastante trabajo.</li>
             <li>También hay muchas otras cosas que podemos hacer, como por ejemplo cómo hacer anidamientos, y ahora expondremos un ejemplo:</li>
-        </ul>
-        <br/>
-        <br/>
+    </ul>
+    <br><br>
         <code>
             <div class="codigo"><span class="clase">nav</span><br>&nbsp;<span class="clase">ul</span><br>
             <span class="variables">&nbsp;&nbsp;margin</span><span>:</span> <span class="variables">0</span><br>
