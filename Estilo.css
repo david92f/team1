@@ -44,9 +44,10 @@ body {
 	position: relative
 }
 
-
+ol,
 ul {
 	margin: 0;
+	padding: 0;
 	list-style: none
 }
 
@@ -114,7 +115,7 @@ h6 {
 	color: #368656;
 	line-height: 1.2em !important;
 	margin-bottom: 0;
-	margin-top: 10px;
+	margin-top: 0;
 	font-weight: 600
 }
 input{
@@ -2654,3 +2655,41 @@ nav a:hover {
 	padding-bottom: 5px;
 }
 
+ul {
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+	background-color: #f40f68;
+}
+li{
+	float: left;
+	color: white;
+}
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover{
+	color: black;
+	background-color: white;
+}
+#main{
+	width: auto;
+	height: auto;
+}
+#logo{
+	width: 300px;
+	height: auto;
+}
+#intro{
+	float: right;
+	width: 500px;
+	height: auto;
+	left: 50%;
+}
+.desarrolladores{
+	padding: 10px;
+}
