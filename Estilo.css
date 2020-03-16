@@ -2663,7 +2663,6 @@ ul {
 }
 li{
 	float: left;
-	color: white;
 }
 li a{
 	display: block;
@@ -2692,4 +2691,5 @@ li a:hover{
 }
 .desarrolladores{
 	padding: 10px;
+	color: white;
 }
