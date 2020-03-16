@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title SCSS, SASS></title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>SCSS</h1>
+
+        <h1>SASS</h1><br>
+        <h3>Siglas de Syntactically Awesome Style Sheets</h3><br>
+        <p>SASS se trata de un preprocesador de CSS, ¿qué quiere decir esto? Pues bien, los preprocesadores 
+            son herramientas para el desarrollador que nos permiten no sólo quedarnos en el límite impuesto de CSS. 
+            Como por ejemplo pueden ser el añadir variables, anidación, funciones, etcétera.
+            <br><br>
+            No hay que pensar que SASS es muy diferente de CSS de todas formas, puesto que 
+            al utilizar el mismo, puedes compilar tu archivo SASS a CSS para poder utilizarla 
+            en tu página web.
+            <br><br>
+            La sintaxis de SASS es muy sencilla. Es muy parecida a la de CSS, pero omitiendo por ejemplo el uso del punto y coma ';', 
+            además del uso de '$' para establecer las variables, aquí abajo tenemos un ejemplo:
+            <br><br></p>
+        <code>
+            <div class="codigo"><span class="variables">$font-stack</span><span>:</span> <span class="variables">Helvetica, sans seriff</span><br>
+            <span class="variables">$primary-color</span><span>:</span> <span class="variables">#333</span><br>
+            <span class="clase">body</span><br>
+            <span class="atributos">&nbsp;&nbsp;&nbsp;font: 100% font-stack</span><br>
+            <span class="atributos">&nbsp;&nbsp;&nbsp;color: $primary-color</span><br>
+
+            </div>
+        </code><br><br>
+        <p>Lo que se traducirá a CSS como:</p>
+        <br>
+        <code>
+            <div class="codigo">
+            <span class="clase">body</span><span>{</span><br>
+            <span class="atributos">&nbsp;&nbsp;&nbsp;font: 100% Helvetica, sans-serif;</span><br>
+            <span class="atributos">&nbsp;&nbsp;&nbsp;color: #333;</span><br>
+            <span>}</span>
+            </div>
+        </code>
+
+        <br><br><p>¿De qué nos sirve todo esto? Pues bien, gracias a poder utilizar variables podemos hacer el código más 
+            entendible, y lo que es más, reutilización de código, implementación de funciones... que al final de todo nos ahorrará bastante trabajo.
+        <br><br>También hay muchas otras cosas que podemos hacer, como por ejemplo cómo hacer anidamientos, y ahora expondremos un ejemplo:
+        <br><br>
+        </p>
+        <code>
+            <div class="codigo"><span class="clase">nav</span><br>&nbsp;<span class="clase">ul</span><br>
+            <span class="variables">&nbsp;&nbsp;margin</span><span>:</span> <span class="variables">0</span><br>
+            <span class="variables">&nbsp;&nbsp;padding</span><span>:</span> <span class="variables">0</span><br>
+            <span class="variables">&nbsp;&nbsp;list-style</span><span>:</span> <span class="variables">none</span><br>
+            <span class="clase">&nbsp;li</span><br>
+            <span class="atributos">&nbsp;&nbsp;display: inline-block</span><br>
+            <span class="clase">&nbsp;a</span><br>
+            <span class="atributos">&nbsp;&nbsp;display</span><span>:</span><span class="variables"> block</span></span><br>
+            <span class="atributos">&nbsp;&nbsp;padding</span><span>:</span><span class="variables"> 6px 12px</span></span><br>
+            <span class="atributos">&nbsp;&nbsp;text-decoration</span><span>:</span><span class="variables"> none</span></span><br>
+            </div>
+        </code><br><br>
+
+        <p>Que volvería a ser traducido en CSS como:</p><br>
+
+        <code>
+            <div class="codigo">
+            <span class="clase">nav ul</span><span>{</span><br>
+            <span class="atributos">&nbsp;margin: 0;</span><br>
+            <span class="atributos">&nbsp;padding: 0;</span><br>
+            <span class="atributos">&nbsp;list-style: none;;</span><br>
+            <span>}</span><br>
+
+            <span class="clase">nav li</span><span>{</span><br>
+            <span class="atributos">&nbsp;display: inline-block;</span><br>
+            <span class="atributos">&nbsp;padding: 0;</span><br>
+            <span>}</span><br>
+
+            <span class="clase">nav a</span><span>{</span><br>
+                <span class="atributos">&nbsp;display: block;</span><br>
+                <span class="atributos">&nbsp;padding: 6px 12px;</span><br>
+                <span class="atributos">&nbsp;text-decoration: none;</span><br>
+                <span>}</span>
+            </div>
+        </code><br><br>
+
+        <p>Obviamente la mejor forma de aprender SASS (también aplicable a SCSS), hay que probar las diferentes cosas que se pueden hacer 
+            para pillar cierta velocidad y conocimiento, esto hará que tu código sea más limpio, y más fácil de hacer.
+        </p>
+    </body>
+    <style>
+        .codigo{
+            background-color: #fdf6e3;
+            display: inline-block;
+        }
+        .variables{
+            color: #cb4b16;
+        }
+        .clase{
+            color: #2aa198;
+        }
+        .atributos{
+            color: #268bd2;
+        }
+    </style>
+</html>
+
