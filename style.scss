@@ -1,0 +1,9 @@
+@mixin texto() {
+    @for $i from 1 through 6 {
+        h#{7 - $i} {
+            font-size: $i * 1em;
+            margin-left: 0.5em;
+        }
+    }
+}
+*{@include texto(); }
