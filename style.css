@@ -1,26 +1,17 @@
-* h6 {
-  font-size: 1em;
-  margin-left: 0.5em;
-}
-* h5 {
-  font-size: 2em;
-  margin-left: 0.5em;
-}
-* h4 {
-  font-size: 3em;
-  margin-left: 0.5em;
-}
-* h3 {
-  font-size: 4em;
-  margin-left: 0.5em;
-}
-* h2 {
-  font-size: 5em;
-  margin-left: 0.5em;
-}
-* h1 {
-  font-size: 6em;
-  margin-left: 0.5em;
-}
+/* Error: expected "{".
+ *   ,
+ * 1 | ~$magenta-corporativo:#FF00FF;
+ *   |                              ^
+ *   '
+ *   coloresdavid.scss 1:30  root stylesheet */
 
-/*# sourceMappingURL=style.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a   \2577 \a 1 \2502  ~$magenta-corporativo:#FF00FF;\a   \2502                               ^\a   \2575 \a   coloresdavid.scss 1:30  root stylesheet';
+}
