@@ -2018,7 +2018,7 @@ nav a:hover {
 	background: -webkit-linear-gradient(bottom, #f40f68 0%, #f86e3d 55%, #fbcd11 100%);
 	background: -o-linear-gradient(bottom, #f40f68 0%, #f86e3d 55%, #fbcd11 100%);
 	background: linear-gradient(to top, #f40f68 0%, #f86e3d 55%, #fbcd11 100%);
-	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent
 }
 
